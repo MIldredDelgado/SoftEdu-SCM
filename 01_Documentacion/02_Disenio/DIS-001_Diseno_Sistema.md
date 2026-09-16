@@ -7,8 +7,9 @@
 - Proyecto: SoftEdu
 - Versión: 1.1
 - Estado: En modificación por CR-001
-- Fecha: 09/09/2026
+- Fecha: 16/09/2026
 - Responsable: Equipo SoftEdu
+- Responsable del cambio: MInerva2026410
 
 ## Historial de versiones
 
