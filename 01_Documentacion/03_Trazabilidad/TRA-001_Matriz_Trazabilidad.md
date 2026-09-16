@@ -5,55 +5,73 @@
 - Código del CI: TRA-001
 - Nombre: Matriz de Trazabilidad
 - Proyecto: SoftEdu
-- Versión: 1.0
-- Estado: Aprobado para línea base inicial
-- Fecha: 09/09/2026
+- Versión: 1.1
+- Estado: En modificación por CR-001
+- Fecha: 16/09/2026
 - Responsable: Equipo SoftEdu
+- Responsable del cambio: MInerva2026410
 
 ## Historial de versiones
 
 | Versión | Fecha | Descripción del cambio | Responsable |
 |---------|-------|------------------------|-------------|
 | 1.0 | 09/09/2026 | Creación inicial de la matriz de trazabilidad | Equipo SoftEdu |
+| 1.1 | 16/09/2026 | Actualización de la trazabilidad asociada a CR-001 - Agregar teléfono al estudiante | MInerva2026410 |
 
 ## 1. Objetivo
 
 Relacionar los requisitos definidos para SoftEdu con los elementos de diseño, código fuente y pruebas que los implementan o verifican.
 
-La matriz permite identificar qué elementos de configuración deben revisarse cuando un requisito sea modificado.
+La matriz permite identificar qué elementos de configuración deben revisarse cuando un requisito sea modificado y registrar la trazabilidad de las solicitudes de cambio.
 
-## 2. Matriz de trazabilidad inicial
+## 2. Matriz de trazabilidad
 
 | Requisito | Descripción | Diseño relacionado | Código relacionado | Prueba relacionada | Estado |
 |-----------|-------------|--------------------|--------------------|--------------------|--------|
-| RF-01 | Registrar estudiante | DIS-001 - Entidad Estudiante | SRC-001 - Gestión de Estudiantes | TST-001 / CP-01 | Completa |
+| RF-01 | Registrar estudiante | DIS-001 v1.1 - Entidad Estudiante | SRC-001 v1.1 - Gestión de Estudiantes | TST-001 v1.1 / CP-01 | Completa |
 | RF-02 | Consultar estudiante | DIS-001 - Entidad Estudiante | SRC-001 - Gestión de Estudiantes | TST-001 / CP-02 | Completa |
 | RF-03 | Registrar curso | DIS-001 - Entidad Curso | Pendiente de implementación | TST-001 / CP-03 | Parcial |
 | RF-04 | Matricular estudiante | DIS-001 - Entidad Matrícula | Pendiente de implementación | TST-001 / CP-04 | Parcial |
 
-## 3. Relación entre elementos de configuración
+## 3. Relación entre elementos de configuración afectados por CR-001
 
-La configuración inicial de SoftEdu presenta la siguiente relación:
+La solicitud de cambio CR-001 afecta la funcionalidad de registro de estudiantes y genera la siguiente cadena de trazabilidad:
 
-REQ-001 v1.0
-↓
-DIS-001 v1.0
-↓
-SRC-001 v1.0
-↓
-TST-001 v1.0
+CR-001 - Agregar teléfono al estudiante
 
-El elemento TRA-001 registra y documenta estas relaciones.
+↓
+
+REQ-001 v1.1 - RF-01 Registrar estudiante
+
+↓
+
+DIS-001 v1.1 - Entidad Estudiante
+
+↓
+
+SRC-001 v1.1 - Gestión de Estudiantes
+
+↓
+
+TST-001 v1.1 - CP-01 Registrar estudiante correctamente
+
+↓
+
+TRA-001 v1.1 - Actualización de la trazabilidad
+
+Los elementos anteriores corresponden a los artefactos afectados por la solicitud de cambio CR-001.
 
 ## 4. Trazabilidad por requisito
 
 ### RF-01 - Registrar estudiante
 
-- Requisito: REQ-001
-- Diseño asociado: DIS-001 - Entidad Estudiante
-- Código asociado: SRC-001 - Gestión de Estudiantes
-- Caso de prueba asociado: TST-001 / CP-01
+- Requisito: REQ-001 v1.1
+- Cambio asociado: CR-001 - Agregar teléfono al estudiante
+- Diseño asociado: DIS-001 v1.1 - Entidad Estudiante
+- Código asociado: SRC-001 v1.1 - Gestión de Estudiantes
+- Caso de prueba asociado: TST-001 v1.1 / CP-01
 - Estado de trazabilidad: Completa
+- Estado del cambio: En implementación, pendiente de revisión
 
 ### RF-02 - Consultar estudiante
 
@@ -81,34 +99,59 @@ El elemento TRA-001 registra y documenta estas relaciones.
 
 ## 5. Trazabilidad de cambios
 
-Cuando se apruebe una solicitud de cambio, esta matriz deberá registrar qué elementos fueron afectados.
+Toda solicitud de cambio aprobada para implementación debe permitir identificar los elementos afectados y seguir su evolución hasta la revisión e integración final.
 
-La relación deberá seguir, cuando aplique, la siguiente estructura:
+Para CR-001, el flujo de trazabilidad es:
 
-Solicitud de cambio
+Solicitud de cambio CR-001
+
 ↓
-Requisito afectado
+
+RF-01 de REQ-001 v1.1
+
 ↓
-Diseño afectado
+
+DIS-001 v1.1
+
 ↓
-Código afectado
+
+SRC-001 v1.1
+
 ↓
-Prueba afectada
+
+TST-001 v1.1 / CP-01
+
 ↓
-Commit o Pull Request
+
+Commits asociados a CR-001
+
 ↓
-Nueva versión de los elementos afectados
+
+Pull Request pendiente
+
+↓
+
+Revisión y decisión pendiente
+
+↓
+
+Nueva línea base, si el cambio es aprobado e integrado
 
 ## 6. Registro de cambios trazables
 
 | Solicitud de cambio | Requisito afectado | Diseño afectado | Código afectado | Prueba afectada | Commit / PR | Estado |
 |--------------------|--------------------|-----------------|-----------------|-----------------|-------------|--------|
 | Sin cambios aprobados en la versión 1.0 | - | - | - | - | - | Línea base inicial |
+| CR-001 - Agregar teléfono al estudiante | REQ-001 v1.1 / RF-01 | DIS-001 v1.1 | SRC-001 v1.1 | TST-001 v1.1 / CP-01 | Commits realizados / PR pendiente | En implementación |
 
 ## 7. Observaciones
 
 Este documento constituye el Elemento de Configuración TRA-001.
 
-La versión 1.0 representa la trazabilidad correspondiente a la configuración inicial de SoftEdu.
+La versión 1.0 representa la trazabilidad correspondiente a la configuración inicial de SoftEdu establecida en BL-001.
 
-Toda modificación posterior deberá actualizar esta matriz y quedar relacionada con una solicitud de cambio aprobada.
+La versión 1.1 registra el impacto y las relaciones generadas por la solicitud de cambio CR-001 - Agregar teléfono al estudiante.
+
+CR-001 se encuentra aprobada para implementación, pero todavía está pendiente de revisión e integración en la rama principal.
+
+Una vez que el cambio sea revisado y aprobado mediante Pull Request, esta matriz deberá actualizar el estado de CR-001, registrar la referencia al Pull Request y reflejar la nueva línea base que se establezca.

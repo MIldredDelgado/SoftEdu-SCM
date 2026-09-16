@@ -5,20 +5,22 @@
 - Código del CI: TST-001
 - Nombre: Plan y Casos de Prueba
 - Proyecto: SoftEdu
-- Versión: 1.0
-- Estado: Aprobado para línea base inicial
-- Fecha: 09/09/2026
+- Versión: 1.1
+- Estado: En modificación por CR-001
+- Fecha: 16/09/2026
 - Responsable: Equipo SoftEdu
+- Responsable del cambio: MInerva2026410
 
 ## Historial de versiones
 
 | Versión | Fecha | Descripción del cambio | Responsable |
 |---------|-------|------------------------|-------------|
 | 1.0 | 09/09/2026 | Creación inicial del plan y casos de prueba | Equipo SoftEdu |
+| 1.1 | 16/09/2026 | Se actualiza CP-01 para validar el atributo teléfono según CR-001 | MInerva2026410 |
 
 ## 1. Objetivo
 
-Validar que las funcionalidades principales de SoftEdu cumplan con los requisitos definidos en REQ-001 versión 1.0.
+Validar que las funcionalidades principales de SoftEdu cumplan con los requisitos definidos en REQ-001 versión 1.1.
 
 ## 2. Alcance de las pruebas
 
@@ -43,10 +45,9 @@ Datos de entrada:
 - Identificación: 1001
 - Nombre completo: Ana Pérez
 - Correo electrónico: ana@email.com
+- Teléfono: 3001234567
 
-Resultado esperado:
-
-El sistema crea correctamente el estudiante y almacena identificación, nombre completo y correo electrónico.
+Resultado esperado: El sistema crea correctamente el estudiante y almacena identificación, nombre completo, correo electrónico y teléfono.
 
 Estado esperado: Aprobado.
 
@@ -57,9 +58,7 @@ Estado esperado: Aprobado.
 - Código asociado: SRC-001
 - Precondición: El estudiante debe estar registrado.
 
-Resultado esperado:
-
-El sistema muestra correctamente los datos del estudiante consultado.
+Resultado esperado: El sistema muestra correctamente los datos del estudiante consultado.
 
 Estado esperado: Aprobado.
 
@@ -74,9 +73,7 @@ Datos de entrada:
 - Nombre: Introducción a Sistemas
 - Créditos: 3
 
-Resultado esperado:
-
-El curso queda registrado correctamente.
+Resultado esperado: El curso queda registrado correctamente.
 
 Estado esperado: Aprobado.
 
@@ -90,9 +87,7 @@ Precondiciones:
 - El estudiante debe existir.
 - El curso debe existir.
 
-Resultado esperado:
-
-El estudiante queda asociado correctamente al curso seleccionado.
+Resultado esperado: El estudiante queda asociado correctamente al curso seleccionado.
 
 Estado esperado: Aprobado.
 
@@ -108,5 +103,7 @@ Estado esperado: Aprobado.
 ## 5. Observaciones de configuración
 
 Este documento constituye el Elemento de Configuración TST-001.
+
+La versión 1.1 de TST-001 se actualiza como consecuencia de CR-001 - Agregar teléfono al estudiante, para validar el cambio incorporado en REQ-001 v1.1, DIS-001 v1.1 y SRC-001 v1.1.
 
 Los casos de prueba deberán actualizarse cuando una solicitud de cambio modifique los requisitos, el diseño o el código relacionado.
