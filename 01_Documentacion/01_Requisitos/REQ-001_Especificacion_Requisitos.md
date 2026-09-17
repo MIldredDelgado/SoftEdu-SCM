@@ -1,6 +1,6 @@
 # REQ-001 - Especificación de Requisitos de SoftEdu
 
-## Información del elemento de configuración
+## Información del elementoS de configuraciónES
 
 - Código del CI: REQ-001
 - Nombre: Especificación de Requisitos
