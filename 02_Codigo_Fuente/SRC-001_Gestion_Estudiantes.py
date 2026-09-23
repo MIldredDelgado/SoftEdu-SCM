@@ -6,13 +6,13 @@
 # Responsable: Equipo SoftEdu
 # Responsable del cambio: MInerva2026410
 
+# Nota de actualización documental — 23/09/2026:
+# Se actualiza el estado de SRC-001 a Aprobado, conforme a la aprobación
+# de CR-001 registrada por MIldredDelgado en el PR #2, ya integrado en main.
+# Se conserva la versión 1.1 y el código funcional.
+# Responsable de la actualización: MInerva2026410.
 
-# SRC-001 - Gestión de Estudiantes
-# Proyecto: SoftEdu
-# Versión: 1.1
-# Estado: En modificación por CR-001
-# Fecha: 09/09/2026
-# Responsable: Equipo SoftEdu
+
 
 
 class Estudiante:

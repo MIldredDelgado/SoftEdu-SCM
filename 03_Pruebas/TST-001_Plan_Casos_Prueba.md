@@ -6,8 +6,8 @@
 - Nombre: Plan y Casos de Prueba
 - Proyecto: SoftEdu
 - Versión: 1.1
-- Estado: En modificación por CR-001
-- Fecha: 16/09/2026
+- Estado: Aprobado
+- Fecha de actualización: 23/09/2026
 - Responsable: Equipo SoftEdu
 - Responsable del cambio: MInerva2026410
 
@@ -17,6 +17,8 @@
 |---------|-------|------------------------|-------------|
 | 1.0 | 09/09/2026 | Creación inicial del plan y casos de prueba | Equipo SoftEdu |
 | 1.1 | 16/09/2026 | Se actualiza CP-01 para validar el atributo teléfono según CR-001 | MInerva2026410 |
+
+Nota de actualización documental — 23/09/2026: se actualiza el estado de TST-001 a Aprobado, conforme a la aprobación de CR-001 registrada por MIldredDelgado en el PR #2, ya integrado en main. Se conserva la versión 1.1 y el contenido de los casos de prueba. Esta aprobación corresponde al documento y no registra nuevos resultados de ejecución. Responsable de la actualización: MInerva2026410.
 
 ## 1. Objetivo
 
